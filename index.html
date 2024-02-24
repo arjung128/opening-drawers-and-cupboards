@@ -1,172 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0069)http://www.cs.cmu.edu/~dchaplot/projects/neural-topological-slam.html -->
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- ======================================================================= -->
-
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
-  <script type="text/javascript" id="www-widgetapi-script" src="./website_files/www-widgetapi.js" async="">
-</script>
-  <script src="./website_files/jsapi" type="text/javascript">
-</script>
-  <script type="text/javascript">
-//<![CDATA[
-  google.load("jquery", "1.3.2");
-  //]]>
-  </script>
-  <script type="text/javascript" charset="UTF-8" src="./website_files/jquery.min.js">
-</script>
-  <style type="text/css">
-/*<![CDATA[*/
-  body {
-    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight:300;
-    font-size:18px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1100px;
-  }
-
-  h1 {
-    font-weight:300;
-  }
-
-  .disclaimerbox {
-    background-color: #eee;
-    border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-    padding: 20px;
-  }
-
-  video.header-vid {
-    height: 140px;
-    border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  img.header-img {
-    height: 140px;
-    border: 1px solid black;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  img.rounded {
-    border: 1px solid #eeeeee;
-    border-radius: 10px ;
-    -moz-border-radius: 10px ;
-    -webkit-border-radius: 10px ;
-  }
-
-  a:link,a:visited
-  {
-    color: #1367a7;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #208799;
-  }
-
-  td.dl-link {
-    height: 160px;
-    text-align: center;
-    font-size: 22px;
-  }
-
-  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-    box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-            15px 15px 0 0px #fff, /* The fourth layer */
-            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-            20px 20px 0 0px #fff, /* The fifth layer */
-            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-            25px 25px 0 0px #fff, /* The fifth layer */
-            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-    margin-left: 10px;
-    margin-right: 45px;
-  }
-
-
-  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-    box-shadow:
-            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-            5px 5px 0 0px #fff, /* The second layer */
-            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-            10px 10px 0 0px #fff, /* The third layer */
-            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 30px;
-    margin-bottom: 5px;
-  }
-
-  .vert-cent {
-    position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-  }
-
-  hr
-  {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  }
-
-  #authors td {
-    padding-bottom:5px;
-    padding-top:30px;
-  }
-  /*]]>*/
-  </style><!-- ======================================================================= -->
+  <title>Ananye Agarwal</title>
+  
+  <meta name="author" content="Ananye Agarwal">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VM50KQ62S3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <script async="" src="./website_files/js" type="text/javascript">
-</script>
-  <script type="text/javascript">
-//<![CDATA[
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-114291442-6');
-  //]]>
+    gtag('config', 'G-VM50KQ62S3');
   </script>
-  <script type="text/javascript" src="./website_files/hidebib.js">
-</script>
-  <link href="./website_files/css" rel="stylesheet" type="text/css" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="icon" type="image/png" href="" />
-
-  <title>Opening Drawers and Cupboards using a Commodity Mobile Manipulator</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="./website_files/iframe_api" type="text/javascript">
-</script>
 </head>
 
 <body>
-  <br />
-
-
-  <center>
+<br />
+<center>
     <span style="font-size:44px;font-weight:bold;">Opening Drawers and Cupboards using a <br/>Commodity Mobile Manipulator</span>
-  </center>
+</center>
+
   <br />
 
-
-  <table align="center" width="800px">
+<table align="center" width="800px">
     <tbody>
       <tr>
         <td align="center" width="230px">
@@ -194,7 +56,6 @@
         </td>
       </tr>
 
-
       <tr>
         <td align="center" width="230">
           <center>
@@ -223,8 +84,9 @@
     </tbody>
   </table>
 
+  <br />
 
-  <table align="center" width="300px" style="padding-top: 25px">
+<table align="center" width="300px" style="padding-top: 25px">
     <tbody>
       <tr>
         <td align="center" width="300px"><iframe width="700" height="400" src="https://www.youtube.com/embed/nw3rtXhv6G8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe>
@@ -235,19 +97,140 @@
 
   <br />
 
-  <br />
-
-
   <div style="width:800px; margin:0 auto; text-align:justify">
      Pulling open cupboards presents many difficult technical challenges in perception (inferring articulation parameters for objects from onboard sensors), planning (producing motion plans that conform to tight task constraints), and control (making and maintaining contact while applying forces on the environment). In this work, we build an end-to-end system that enables a commodity mobile manipulator (Stretch RE2) to pull open drawers and cupboards in diverse previously unseen real world environments. We conduct over 4 days of real world testing of this system spanning 31 different objects from across 13 different real world environments. Our system achieves a success rate of 61%. An analysis of the failure modes sheds light on what the current bottlenecks are and offers suggestions on the next steps researchers must focus on. We will open source code and models for others to replicate and build upon our system.
   </div>
 
   <br />
 
-  <br />
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <h2 class="title is-3" style="text-align: center; ">Successes</h2>
+        <br>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/dcl_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/csl_studio_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/octave_left_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/nano_right_isolated_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/siebel_kitchen_left_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/csl_studio_west_right_slanted_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/nano_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/507_apartment_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/siebel_kitchen_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/csl_basement_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/csl_studio_west_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/octave_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/dcl_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/siebel_kitchen_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-50">
+          <div class="col-md-5 col-sm-2" align="center">
+            <video playsinline autoplay loop muted src="images/siebel_service_room_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/csl_basement_left_slanted_right_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+      <div class="row no-gutters py-2">
+          <div class="col-md-5 col-sm-6" align="center">
+            <video playsinline autoplay loop muted src="images/dcl_left_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+          <div class="hidden-lg hidden-md hidden-sm">&nbsp;</div>
+          <div class="col-md-5 col-sm-6 mx-auto">
+            <video playsinline autoplay loop muted src="images/siebel_service_room_drawer_clipped_comp28.mp4" alt="sym" width="118%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-  <script xml:space="preserve" language="JavaScript" type="text/javascript">
-  <!--hideallbibs();-->
-  </script>
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="height: 200px">
+                <img src='images/nsnnet.jpg' width="320">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>End-to-End Neuro-Symbolic Architecture for Image-to-Image Reasoning Tasks</papertitle>
+              <p></p>
+							<b>Ananye Agarwal</b>, Pradeep Shenoy, Mausam 
+              <br>
+              arXiv 2021 
+              <br>
+              <a href="https://arxiv.org/abs/2106.03121">arXiv</a>
+              <p></p>
+            </td>
+          </tr> 
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one" style="height: 200px">
+                <img src='images/siamesexml.jpg' width="320">
+              </div>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>SiameseXML: Siamese networks meet extreme classifiers with 100M labels</papertitle>
+              <p></p>
+							K. Dahiya, <b>A. Agarwal</b>, D. Saini, K. Gururaj, J. Jiao, A. Singh, S. Agarwal, P. Kar and M. Varma
+              <br>
+              ICML 2021
+              <br>
+              <a href="http://manikvarma.org/pubs/dahiya21b.pdf">PDF</a> | <a href="https://github.com/Extreme-classification/siamesexml">code</a>
+              <p></p>
+            </td>
+          </tr> 
+          <tr><td></td><td style="font-size: 14px;">Website template modified from <a href="https://github.com/jonbarron/website" style="font-size: 14px;">Jon Barron's repo</a>. </td></tr>
+        </tbody></table> -->
+        
 </body>
+
 </html>
